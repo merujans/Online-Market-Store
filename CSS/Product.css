@@ -1,0 +1,119 @@
+
+.single-product{
+    margin-top: 20px;
+    text-align: justify;
+
+
+}
+.single-product .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    gap: 5px;
+}
+    .single-product .col-2 img {
+        padding: 0px;
+        margin-left:100px;
+        margin-top:2px;
+}
+.single-product .col-2{
+    padding:20px;
+}
+.single-product .col-2 p{
+    margin-left : 5px;
+    font-size: 16px;
+}
+.single-product .col-2 .pro{
+    margin-left : 50px;
+}
+ .single-product .col-2 h3{
+     margin: 5px;
+     padding: 5px;
+ }
+
+
+.single-product h3{
+    margin: 20px 0;
+    font-weight:bold;
+}
+.single-product select{
+    display: block;
+    padding: 5px;
+    margin-top: 3px;
+}
+.single-product input{
+    width: 40px;
+    height : 20px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+.single-product button{
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    margin-right: 20px;
+    color: white;
+    border: none;
+}
+.single-product .cart-btn{
+    background : #f53d3d;
+}
+.single-product .wish-btn{
+    background : #0a40d5;
+}
+input:focus{
+    outline: none;
+}
+.single-product a{
+    text-decoration:none;
+}
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+    .small-container img {
+        transition: transform .5s ease;
+    }
+
+        .small-container img:hover {
+            transform: scale(1.1);
+        }
+
+    .small-container .row .col-5 {
+        flex-basis: 25%;
+        display: inline-block;
+        padding: 5px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        gap: 5px;
+    }
+
+    .small-container h5 {
+        margin-top: 5px;
+    }
+
+.col-5 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.small-container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    gap: 5px;
+}
+
+h3 {
+    margin: 15px 0px 20px 15px;
+}
+
+.col-5 .rating img {
+    width: 16px;
+    height: 16px;
+}

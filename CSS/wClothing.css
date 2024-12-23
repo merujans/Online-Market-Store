@@ -1,0 +1,106 @@
+
+
+/*Page Content*/
+
+#slider {
+    overflow: hidden;
+}
+
+@keyframes slider {
+    0% {
+        left: 0px;
+    }
+
+    20% {
+        left: 0px;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+#slider figure {
+    margin-top: 5px;
+    width: 500%;
+    height: 50%;
+    margin: 0 0 0 0px;
+    position: relative;
+    animation: 25s slider infinite;
+}
+
+    #slider figure img {
+        width: 20%;
+        height: 10%;
+        position: relative;
+        float: left;
+    }
+
+.slide {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    width: 500px;
+    margin-left: 400px;
+    margin-right: 200px;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+    .small-container .row .col-5 {
+        flex-basis: 25%;
+        display: inline-block;
+        padding: 5px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        gap: 5px;
+    }
+
+.col-5 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.small-container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    gap: 5px;
+}
+
+h3 {
+    margin: 15px 0px 20px 15px;
+}
+
+.col-5 .rating img {
+    width: 16px;
+    height: 16px;
+}

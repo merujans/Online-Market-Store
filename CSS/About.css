@@ -1,0 +1,27 @@
+
+
+.about {
+	padding: 50px;
+	text-align: center;
+	line-height: 1.6;
+	background: linear-gradient(#ffd89b,#19547b)
+}
+.about .row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+	gap: 5px;
+}
+.col-2 img {
+	max-width: 100%;
+	padding: 50px 0;
+}
+.col-2 h1 {
+	margin: 55px 0px 10px 28px;
+	color:#022062;
+	text-align : justify;
+}
+.col-2 p {
+	text-align: justify;
+	margin-left:20px;
+	padding-right: 20px;
+}

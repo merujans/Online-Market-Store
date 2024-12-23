@@ -1,0 +1,29 @@
+
+.wish-container {
+    text-align: justify;
+    padding: 20px;
+    margin: 20px;
+}
+
+div .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    gap: 5px;
+}
+
+.wish-container, .row, .col-2 {
+    margin: 20px 100px 10px 100px;
+}
+
+    .wish-container h5 {
+        margin-top: 5px;
+    }
+
+    .wish-container img {
+        padding: 10px;
+    }
+
+.sb-btn {
+    background: #d82727;
+    color: white;
+}

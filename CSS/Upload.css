@@ -1,0 +1,43 @@
+﻿
+
+/*Page Content*/
+.form-1 form {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 30px 80px 50px 80px;
+    background: linear-gradient( #c4e0e5, #4ca1af, #c4e0e5);
+    text-align: left;
+}
+
+.form-1 h4 {
+    margin: 10px;
+}
+
+.form-1 input {
+    padding: 5px;
+    margin: 5px;
+    width: 38%;
+}
+
+.form-1 select {
+    padding: 5px;
+    margin: 5px;
+    width: 40%;
+}
+
+.form-1 #reset {
+    width: 20%;
+    background: #0f7bcd;
+    color: white;
+    border: none;
+    margin-left: 620px;
+}
+
+.form-1 #submit {
+    width: 20%;
+    background: #f62a2a;
+    color: white;
+    border: none;
+    margin: 5px;
+    float: right;
+}
