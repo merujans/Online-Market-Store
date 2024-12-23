@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titlt>Seller Login</titlt>
+    <script src="..\JS\password.js"></script>
+
+    <!-- Sell css file link  -->
+    <link rel="stylesheet" href="../CSS/Sell.css">
+    <link rel="stylesheet" href="../CSS/headerFooter.css">
+</head>
+<body>
+<!--Header Section-->
+
+<header class="header<!--Header Section-->">
+    <a href="Home.html">
+        <img src="..\Images\logo4.png" width="150">
+    </a>
+
+    <div class="icons">
+        <ul>
+
+            <li>
+                <form action="" class="search-bar-container">
+
+                    <input type="search" id="search-bar" placeholder="search products" />
+                    <label for="search-bar" id="search-btn"></label>
+
+                    <button type="submit" id="search-btn" value="Search">Search</button>
+                </form>
+            </li>
+        </ul>
+        <a href="Login.html"><img id="user-btn" src="..\Images\Icons\User.png " width="35" height="35" style="float: right" /></a>
+        <a href="Cart.html"><img id="cart-btn" src="..\Images\Icons\Cart.jpg" width="35" height="35" style="float: right" /></a>
+
+    </div>
+</header>
+
+<div class="menu-bar">
+    <ul>
+        <li>
+            <a class="" href=" ">Category</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me">
+                        <a href="">Fashion & Clothing</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="wClothing.html">Women</a></li>
+                                <li><a href="mClothing.html">Men</a></li>
+                                <li><a href="kClothing.html">Kids</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hover-me">
+                        <a href="">Accessories & Beauty Products</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="men.php">Women</a></li>
+                                <li><a href="men.php">Men</a></li>
+                                <li><a href="men.php">Kids</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="Toys.html">Toys,Books & Stationaries</a></li>
+                    <li><a href="Sports.html">Sports Goods</a></li>
+                    <li><a href="lifeStyle.html">Home & LifeStyle</a></li>
+                    <li><a href="Electronics.html">Electronics</a></li>
+                    <li><a href="Pet.html">Pet Items</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Signup.html">Sign Up</a></li>
+        <li><a href="Account.html">My Account</a></li>
+        <li><a href="Wishlist.html">Wishlist</a></li>
+        <li><a href="Contact.html">Contact  Us</a></li>
+        <li class="active"><a href="Sell.html">Sell</a></li>
+        <li>
+            <a href="">Seller Center</a>
+            <div class="sub-menu">
+                <ul>
+                    <li style="margin:15px; text-align:center;" class="hover-me">
+
+                        <a href="SellerLogin.html">Seller Login</a>
+                        <a href="SellerDetails.html">Seller Details</a>
+                        <a href="SellerAccount.html">Seller Account</a>
+                        <a href="uploadProduct.html">Upload Products</a>
+
+
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</div>
+       <br><br>
+     <div class="container"><h1>Sign up To Sell</h1></div><br><br>
+        <div class="add">
+            <form action="connection.php" method="POST">
+                <div class="input_field">
+                    <label for="accountType" id="addformalign" style="margin-right: 10px;">Account Type *</label>
+                    <input type="radio" name="accountType" value="i"><label style="margin-left: 5px;">Individual</label>
+                    <input type="radio" name="accounType" value="b"><label style="margin-left: 5px;">Business</label>
+                </div><br>
+
+
+                <label for="shopBasedIn" id="addformalign">Shop based in *</label><br>
+                <input type="text" style="width:270px" placeholder="Country" name="shopBasedIn" required /><br><br>
+
+                <div class="input_field">
+                    <label style="margin-left: 1px;">Mobile Number *</label><br>
+                    <select name="phoneCode" required>
+                        <option selected hidden value="">Select Code</option>
+                        <option value="977">977</option>
+                        <option value="978">978</option>
+                        <option value="979">979</option>
+                        <option value="973">973</option>
+                        <option value="972">972</option>
+                        <option value="974">974</option>
+                    </select>
+                    <input type="tel" placeholder="Mobile Number" name="phone" required>
+                </div>
+                <br>
+
+                <label for="verificationCode" id="addformalign">Verification Code *</label><br>
+                <input type="text" style="width:270px" placeholder="Verification Code" name="verificationCode" required /><br><br>
+
+                <label for="password" id="addformalign">Password *</label><br>
+                <input type="text" style="width:270px" placeholder="Password" name="password" required /><br><br>
+
+                <label for="conformPassword" id="addformalign">Conform Password *</label><br>
+                <input type="text" style="width:270px" placeholder="Conform Password" name="conformPassword" required /><br><br>
+
+
+                <label for="shopName" id="addformalign">Shop Name * </label><br>
+                <input type="text" style="width:270px" placeholder="Shop Name" name="shopName" required /><br><br>
+
+
+                <label for="email" id="addformalign">Email Address *</label><br>
+                <input type="email" style="width:270px" pattern="[a-zA-Z0-9._%+-]+@[a-z]+.[a-z]{2,4}" placeholder="E mail" name="email" />
+                <br><br>
+
+                <div class="input_field terms">
+                    <label class="check"></label>
+                    <input type="checkbox" name="Billing Details are same as shipping details" value="with driver">I've read and understand Shopzilla's Terms and Conditions<br>
+                </div>
+
+                <br><br>
+                <input style="background-color: #6495ED; border: none; border-radius: 10px; color: White; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; cursor: pointer; box-shadow: 0 2px #999" type="submit" value="Submit">
+
+            </form>
+        </div>
+    
+
+
+
+
+        <!--Footer Section-->
+
+        <div class="footer">
+            <div class="container-q">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <img src="..\Images\icons\Googleplay1.png" />
+                        <img src="..\Images\icons\Windows.png" />
+                        <br />
+                        <img src="..\Images\icons\Applestore1.jpg" />
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Payment Methods</h3>
+                        <img src="..\Images\icons\Master1.png" />
+                        <img src="..\Images\icons\Visa1.png" />
+                        <img src="..\Images\icons\Discover.png" />
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us on</h3>
+                        <img src="..\Images\icons\Facebook1.png" />
+                        <img src="..\Images\icons\Instagram1.png" />
+                        <img src="..\Images\icons\Twitter1.png" />
+                    </div>
+                    <div class="footer-col-4">
+                        <p><a href="About.html">About Us</a></p><br />
+                        <p><a href="Bloh.html">Blog</a></p><br />
+                        <p><a href="Policy.html">Privacy Policy</a></p><br />
+                        <p><a href="Terms.html">Terms and Conditions</a></p>
+                    </div>
+                    <div class="footer-col-5">
+                        <h3>Business Details</h3>
+                        <p><img src="..\Images\icons\location.png" />Shopzilla, Colombo, Sri Lanka.</p>
+                        <p><img src="..\Images\icons\email.png" />Shopzilla2022@gmail.com</p>
+                        <p><img src="..\Images\icons\phone.png" />+94573409210</p>
+                    </div>
+                </div>
+                <br /><br />
+                <hr />
+                <p class="copyright"> Copyright 2022 Shopzilla <br /> All Rights Reserved</p>
+            </div>
+        </div>
+    </body>
+</html>

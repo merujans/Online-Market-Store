@@ -1,0 +1,295 @@
+ <?php
+	 require 'config.php';
+ ?>
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkout Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- payment css file link  -->
+    <link rel="stylesheet" href="../css/headerFooter.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+
+</head>
+
+<body>
+<!--Header Section-->
+ <header class="header">
+    <a href="Home.html">
+        <img src="..\Images\logo4.png" width="150">
+    </a>
+
+    <div class="icons">
+        <ul>
+
+            <li>
+                <form action="" class="search-bar-container">
+
+                    <input type="search" id="search-bar" placeholder="search products" />
+                    <label for="search-bar" id="search-btn"></label>
+
+                    <button type="submit" id="search-btn" value="Search">Search</button>
+                </form>
+            </li>
+        </ul>
+        <a href="Login.html"><img id="user-btn" src="..\Images\Icons\User.png " width="35" height="35" style="float: right" /></a>
+        <a href="Cart.html"><img id="cart-btn" src="..\Images\Icons\Cart.jpg" width="35" height="35" style="float: right" /></a>
+
+    </div>
+</header>
+
+
+<div class="menu-bar">
+    <ul>
+        <li>
+            <a class="active" href=" ">Category</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me">
+                        <a href="">Fashion & Clothing</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="wClothing.html">Women</a></li>
+                                <li><a href="mClothing.html">Men</a></li>
+                                <li><a href="kClothing.html">Kids</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hover-me">
+                        <a href="">Accessories & Beauty Products</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="men.php">Women</a></li>
+                                <li><a href="men.php">Men</a></li>
+                                <li><a href="men.php">Kids</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="Toys.html">Toys,Books & Stationaries</a></li>
+                    <li><a href="Sports.html">Sports Goods</a></li>
+                    <li><a href="lifeStyle.html">Home & LifeStyle</a></li>
+                    <li><a href="Electronics.html">Electronics</a></li>
+                    <li class="active"><a href="Pet.html">Pet Items</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Signup.html">Sign Up</a></li>
+        <li><a href="Account.html">My Account</a></li>
+        <li><a href="Wishlist.html">Wishlist</a></li>
+        <li><a href="Contact.html">Contact  Us</a></li>
+        <li><a href="Sell.html">Sell</a></li>
+        <li><a href="SellerAccount.html">Seller Center</a></li>
+
+    </ul>
+</div>
+
+
+    <div class="container">
+
+        <form method="POST" action="checkout.php">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">Shipping Details</h3>
+
+                    <div class="flex">
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="First Name *" name="firstName" required />
+                        </div>
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="Last Name" name="lastName" required />
+                        </div>
+                    </div>
+
+
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="Country *" name="country" required />
+                    </div>
+
+
+                    <div class="flex">
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="Street Address *" name="address" required />
+                        </div>
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="Town/City *" name="city" required />
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="Street/Province *" name="province" required />
+                        </div>
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="Zip Code *" name="zipCode" required />
+                        </div>
+                    </div>
+
+
+                    <br><br>
+                    <h3 class="title">Billing Details</h3>
+
+                    <input type="checkbox" name="Billing Details are same as shipping details" value="with driver" required>Billing Details are same as shipping details <br>
+
+                    <div class="flex">
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="Street/Address *" required />
+                        </div>
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="Town/City *" required />
+                        </div>
+                    </div>
+
+
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="Zip Code *" required />
+                    </div><br><br>
+
+                    <h3 class="title">Contact information</h3>
+
+                    <div class="flex">
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="Country Code *" name="countryCode" required />
+                        </div>
+                        <div class="inputBox">
+
+                            <input type="text" placeholder="Mobile Number *" name="phoneNumber" required />
+                        </div>
+                    </div>
+
+
+
+                    <div class="inputBox">
+
+                        <input type="email" placeholder="Email *" name="email" required />
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+
+
+                    <h4 class="title">Order Summary</h4>
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="Sub Total" name="subTotal" required />
+                    </div>
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="Shopping Fee " name="shoppingFee" required />
+                    </div>
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="Discount " name="discount" required />
+                    </div>
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="Total" name="total" required />
+                    </div>
+
+
+                    <div class="inputBox">
+
+                        <img src="../Images/card_img.png" alt=""  width="60" height="40" />
+                    </div>
+
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="Name on Account" name="nameofAccount" required />
+                    </div>
+                    <div class="inputBox">
+
+                        <input type="text" placeholder="Card No" name="cardNo" required />
+                    </div>
+
+
+                    <div class="flex">
+                        <div class="inputBox">
+
+                            <p>Expiry Date<input type="date" id="Sdate" name="startd" required /> &emsp;</p>
+                        </div>
+                        <div class="inputBox">
+
+                            <p>CVV<input type="text" placeholder="CVV Code" name="cvv" required />
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="Conform and Pay" class="submit-btn">
+            <input type="submit" value="Cancel" class="submit-btn-1">
+
+        </form>
+
+    </div>
+
+
+<!--Footer Section-->
+
+<div class="footer">
+    <div class="container-q">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <img src="..\Images\icons\Googleplay1.png" />
+                <img src="..\Images\icons\Windows.png" />
+                <br />
+                <img src="..\Images\icons\Applestore1.jpg" />
+            </div>
+            <div class="footer-col-2">
+                <h3>Payment Methods</h3>
+                <img src="..\Images\icons\Master1.png" />
+                <img src="..\Images\icons\Visa1.png" />
+                <img src="..\Images\icons\Discover.png" />
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us on</h3>
+                <img src="..\Images\icons\Facebook1.png" />
+                <img src="..\Images\icons\Instagram1.png" />
+                <img src="..\Images\icons\Twitter1.png" />
+            </div>
+            <div class="footer-col-4">
+                <p><a href="About.html">About Us</a></p><br />
+                <p><a href="Bloh.html">Blog</a></p><br />
+                <p><a href="Policy.html">Privacy Policy</a></p><br />
+                <p><a href="Terms.html">Terms and Conditions</a></p>
+            </div>
+            <div class="footer-col-5">
+                <h3>Business Details</h3>
+                <p><img src="..\Images\icons\location.png" />Shopzilla, Colombo, Sri Lanka.</p>
+                <p><img src="..\Images\icons\email.png" />Shopzilla2022@gmail.com</p>
+                <p><img src="..\Images\icons\phone.png" />+94573409210</p>
+            </div>
+        </div>
+        <br /><br />
+        <hr />
+        <p class="copyright"> Copyright 2022 Shopzilla <br /> All Rights Reserved</p>
+    </div>
+</div>
+
+
+</body>
+</html>

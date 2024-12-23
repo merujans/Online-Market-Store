@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="..\CSS\headerFooter.css" />
+    <link rel="stylesheet" href="..\CSS\Product.css" />
+</head>
+
+<body>
+
+    <!--Header Section-->
+
+    <header class="header">
+        <a href="Home.html">
+            <img src="..\Images\logo4.png" width="150">
+        </a>
+
+        <div class="icons">
+            <ul>
+
+                <li>
+                    <form action="" class="search-bar-container">
+
+                        <input type="search" id="search-bar" placeholder="search products" />
+                        <label for="search-bar" id="search-btn"></label>
+
+                        <button type="submit" id="search-btn" value="Search">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <a href="Login.html"><img id="user-btn" src="..\Images\Icons\User.png " width="35" height="35" style="float: right" /></a>
+            <a href="Cart.html"><img id="cart-btn" src="..\Images\Icons\Cart.jpg" width="35" height="35" style="float: right" /></a>
+
+        </div>
+    </header>
+
+
+    <div class="menu-bar">
+        <ul>
+            <li>
+                <a href=" ">Category</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li class="hover-me">
+                            <a href="">Fashion & Clothing</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="wClothing.html">Women</a></li>
+                                    <li><a href="mClothing.html">Men</a></li>
+                                    <li><a href="kClothing.html">Kids</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me">
+                            <a href="">Accessories & Beauty Products</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="men.php">Women</a></li>
+                                    <li><a href="men.php">Men</a></li>
+                                    <li><a href="men.php">Kids</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Toys.html">Toys,Books & Stationaries</a></li>
+                        <li><a href="Sports.html">Sports Goods</a></li>
+                        <li><a href="lifeStyle.html">Home & LifeStyle</a></li>
+                        <li><a href="Electronics.html">Electronics</a></li>
+                        <li><a href="Pet.html">Pet Items</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Signup.html">Sign Up</a></li>
+            <li><a href="Account.html">My Account</a></li>
+            <li><a href="Wishlist.html">Wishlist</a></li>
+            <li><a href="Contact.html">Contact  Us</a></li>
+            <li><a href="Sell.html">Sell</a></li>
+            <li>
+                <a href="">Seller Center</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li style="margin:15px; text-align:center;" class="hover-me">
+
+                            <a href="SellerLogin.html">Seller Login</a>
+                            <a href="SellerDetails.html">Seller Details</a>
+                            <a href="SellerAccount.html">Seller Account</a>
+                            <a href="uploadProduct.html">Upload Products</a>
+
+
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="..\Images\sports\Outfits\outfit3.jpg" width="300" height="300" />
+
+            </div>
+            <div class="col-2">
+                <p>Category</p>
+                <h1>Badminton outfit</h1>
+                <h4>$60.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <br />
+
+                <select>
+                    <option>~Choose Color</option>
+                    <option style="background-color:red;">Red</option>
+                    <option style="background-color:blue;">Blue</option>
+                    <option style="background-color:black;">Black</option>
+                    <option style="background-color:white;">White</option>
+                    <option style="background-color:green;">Green</option>
+                    <option style="background-color:yellow;">Yellow</option>
+                </select>
+                <br />
+                <label>Quantity</label>
+                <input type="number" value="1" min="1" max="10" />
+                <br />
+                <button href="" class="cart-btn">Add To Cart</button>
+                <button href="" class="wish-btn">Add To Wishlist</button><br />
+                <br /><br /><br /><h3>Product Details</h3>
+                <p>detailed description</p>
+                <br /><br /><h3>Reviews</h3>
+                <p>Product review</p>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <h3>More Products</h3>
+
+        <div class="row">
+            <div class="col-5">
+                <img src="..\Images\sports\Items\item6.jpg" />
+                <h5>High quality Badminton racket</h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                </div>
+                <p>$200.00 </p>
+            </div>
+            <div class="col-5">
+                <img src="..\Images\sports\Items\item2.jpg" />
+                <h5>Wooden Cricket bat</h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star1.png" />
+                </div>
+                <p>$30.00 </p>
+            </div>
+            <div class="col-5">
+                <img src="..\Images\sports\Items\item5.jpg" />
+                <h5>Football Goal-keeper Helmet</h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star1.png" />
+                </div>
+                <p>$399.99 </p>
+            </div>
+            <div class="col-5">
+                <img src="..\Images\sports\Items\item4.jpg" />
+                <h5> One-piece composite hockey stick</h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star1.png" />
+                    <img src="..\Images\icons\Star1.png" />
+                </div>
+                <p>$75.00 </p>
+            </div>
+            <div class="col-5">
+                <img src="..\Images\sports\Items\item3.jpg" />
+                <h5>Best quality Basketball</h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star1.png" />
+                </div>
+                <p>$65.00 </p>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer Section-->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <img src="..\Images\icons\Googleplay1.png" />
+                    <img src="..\Images\icons\Windows.png" />
+                    <br />
+                    <img src="..\Images\icons\Applestore1.jpg" />
+                </div>
+                <div class="footer-col-2">
+                    <h3>Payment Methods</h3>
+                    <img src="..\Images\icons\Master1.png" />
+                    <img src="..\Images\icons\Visa1.png" />
+                    <img src="..\Images\icons\Discover.png" />
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us on</h3>
+                    <img src="..\Images\icons\Facebook1.png" />
+                    <img src="..\Images\icons\Instagram1.png" />
+                    <img src="..\Images\icons\Twitter1.png" />
+                </div>
+                <div class="footer-col-4">
+                    <p><a href="About.html">About Us</a></p><br />
+                    <p><a href="Blog.html">Blog</a></p><br />
+                    <p><a href="Policy.html">Privacy Policy</a></p><br />
+                    <p><a href="Terms.html">Terms and Conditions</a></p>
+                </div>
+                <div class="footer-col-5">
+                    <h3>Business Details</h3>
+                    <p><img src="..\Images\icons\location.png" />Shopzilla, Colombo, Sri Lanka.</p>
+                    <p><img src="..\Images\icons\email.png" />Shopzilla2022@gmail.com</p>
+                    <p><img src="..\Images\icons\phone.png" />+94573409210</p>
+                </div>
+            </div>
+            <br /><br />
+            <hr />
+            <p class="copyright"> Copyright 2022 Shopzilla <br /> All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Upload Products</title>
+
+     <link rel="stylesheet" href="..\CSS\Upload.css" />
+     <link rel="stylesheet" href="..\CSS\headerFooter.css" />
+
+</head>
+
+<body>
+    <!--Header Section-->
+
+    <header class="header">
+        <a href="Home.html">
+            <img src="..\Images\logo4.png" width="150">
+        </a>
+
+        <div class="icons">
+            <ul>
+     
+                <li>
+                    <form action="" class="search-bar-container">
+                        
+                        <input type="search" id="search-bar" placeholder="search products" />
+                        <label for="search-bar" id="search-btn"></label>
+
+                        <button type="submit" id="search-btn" value="Search">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <a href="Login.html"><img id="user-btn" src="..\Images\Icons\User.png " width="35" height="35" style="float: right" /></a>
+            <a href="Cart.html"><img id="cart-btn" src="..\Images\Icons\Cart.jpg" width="35" height="35" style="float: right" /></a>
+
+        </div>
+    </header>
+
+    <div class="menu-bar">
+        <ul>
+            <li>
+                <a href=" ">Category</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li class="hover-me">
+                            <a href="">Fashion & Clothing</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="wClothing.html">Women</a></li>
+                                    <li><a href="mClothing.html">Men</a></li>
+                                    <li><a href="kClothing.html">Kids</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me">
+                            <a href="">Accessories & Beauty Products</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="wProdcuts.html">Women</a></li>
+                                    <li><a href="mProducts.html">Men</a></li>
+                                    <li><a href="kProducts.html">Kids</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Toys.html">Toys,Books & Stationaries</a></li>
+                        <li><a href="Sports.html">Sports Goods</a></li>
+                        <li><a href="lifeStyle.html">Home & LifeStyle</a></li>
+                        <li><a href="Electronics.html">Electronics</a></li>
+                        <li><a href="Pet.html">Pet Items</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Signup.html">Sign Up</a></li>
+            <li><a href="Account.html">My Account</a></li>
+            <li><a href="Wishlist.html">Wishlist</a></li>
+            <li><a href="Contact.html">Contact  Us</a></li>
+            <li><a href="Sell.html">Sell</a></li>
+            <li>
+                <a href="">Seller Center</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li style="margin:15px; text-align:center;" class="hover-me">
+
+                            <a href="SellerLogin.html">Seller Login</a>
+                            <a href="SellerDetails.html">Seller Details</a>
+                            <a href="SellerAccount.html">Seller Account</a>
+                            <a class="active" href="uploadProduct.html">Upload Products</a>
+
+
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+
+        </ul>
+    </div>
+    
+
+ <!--page content-->
+
+<h2 style="text-align:center; padding-top:30px;"> Upload Product details</h2>
+    <br />
+    <div class="form-1">
+    <form method="POST" action="submitUploadItems.php" enctype = "multipart/form-data">
+        <h4>Basic Information</h4><br>
+
+        <input type="text" id="Pname" name="Pname" placeholder="Product Name" required />
+        <br />
+        <select  name="Pcat" required>
+            <option>Category</option>
+            <option>Women Clothing</option>
+            <option>Men Clothing</option>
+            <option>Kids Clothing</option>
+            <option>Women Products</option>
+            <option>Men Products</option>
+            <option>Kids Products</option>
+            <option>Toys,Books & Stationaries</option>
+            <option>Sports Goods</option>
+            <option>Home & LifeStyle</option>
+            <option>Electronics</option>
+            <option>Pet Items</option>
+        </select>
+        <br />
+        <input type="url" id="videoURL" name="videoURL" placeholder="Video URL" /><br />
+
+        <label style="margin-left:5px;">Upload Images </label>
+        <input type="file" id="img" name= "Pimg" required>
+        <br /><br>
+
+        <h4>Product attributes</h4><br>
+
+        <input type="text" id="Pbrand" name="Pbrand" placeholder="Brand" required /><br />
+       
+        <select name = "Pcolor">
+            <option>~Choose Color</option>
+            <option style="background-color:red;">Red</option>
+            <option style="background-color:blue;">Blue</option>
+            <option style="background-color:black;">Black</option>
+            <option style="background-color:white;">White</option>
+            <option style="background-color:green;">Green</option>
+            <option style="background-color:yellow;">Yellow</option>
+        </select><br />
+        <input type="text" id="Pgen" name="Pgen" placeholder="Generation" /><br />
+        <input type="text" id="Psize" name="Psize" placeholder="Size" /><br />
+        <input type="text" id="Ptype" name="Ptype" placeholder="Type" /><br />
+        <input type="text" id="Pmov" name="Pmov" placeholder="Movement"  /><br />
+
+        <br><h4>Detailed Description</h4><br>
+
+        <textarea id="Pdesc" name="Pdesc" rows="7" cols="70" placeholder="Product Details"></textarea><br />
+
+        <br><h4>Price and Stock</h4><br>
+
+        <label>Quantity </label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+        <br />
+
+        <label style="padding-right: 25px;">Price</label>
+        <input type="text" id="price" name="price" placeholder="$" required /><br />
+
+        <label>Discount</label>
+        <input type="text" id="dis" name="dis" placeholder="$" /><br />
+        <br />
+
+        <br><h4>Service</h4><br>
+        <input type="text" id="Wtype" name="Wtype" placeholder="Warranty Type" /><br />
+        <input type="text" id="Wperiod" name="Wperiod" placeholder="Warranty Period" /><br />
+
+        <br><h4>Delivery</h4><br>
+        <label>Package dimensions</label>
+        <input type="text" id="length" name="length" placeholder="length (cm)" />
+        <input type="text" id="width" name="width" placeholder="width (cm)" /><br />
+
+        <label style="padding-right: 27px;">Package Weight</label>
+        <input type="text" id="weight" name="weight" placeholder="Weight (kg)" /><br />
+
+        <input type="reset" id="reset" name="reset" value="Cancel" />
+        <input type="submit" id="submit" name="submit" value="Submit" />
+
+    </form>
+    </div>
+    
+ <!--Footer Section-->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <img src="..\Images\icons\Googleplay1.png" />
+                    <img src="..\Images\icons\Windows.png" />
+                    <br />
+                    <img src="..\Images\icons\Applestore1.jpg" />
+                </div>
+                <div class="footer-col-2">
+                    <h3>Payment Methods</h3>
+                    <img src="..\Images\icons\Master1.png" />
+                    <img src="..\Images\icons\Visa1.png" />
+                    <img src="..\Images\icons\Discover.png" />
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us on</h3>
+                    <img src="..\Images\icons\Facebook1.png" />
+                    <img src="..\Images\icons\Instagram1.png" />
+                    <img src="..\Images\icons\Twitter1.png" />
+                </div>
+                <div class="footer-col-4">
+                    <p><a href="About.html">About Us</a></p><br />
+                    <p><a href="Blog.html">Blog</a></p><br />
+                    <p><a href="Policy.html">Privacy Policy</a></p><br />
+                    <p><a href="Terms.html">Terms and Conditions</a></p>
+                </div>
+                <div class="footer-col-5">
+                    <h3>Business Details</h3>
+                    <p><img src="..\Images\icons\location.png" />Shopzilla, Colombo, Sri Lanka.</p>
+                    <p><img src="..\Images\icons\email.png" />Shopzilla2022@gmail.com</p>
+                    <p><img src="..\Images\icons\phone.png" />+94573409210</p>
+                </div>
+            </div>
+            <br /><br />
+            <hr />
+            <p class="copyright"> Copyright 2022 Shopzilla <br /> All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>

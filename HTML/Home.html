@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Shopzilla Home Page</title>
+    <link rel="stylesheet" href="../CSS/headerFooter.css" />
+    <link rel="stylesheet" href="../CSS/HomePage.css" />
+
+</head>
+
+<body>
+    <!--Header Section-->
+
+    <header class="header">
+        <a href="Home.html">
+            <img src="..\Images\logo4.png" width="150">
+        </a>
+
+        <div class="icons">
+            <ul>
+
+                <li>
+                    <form action="" class="search-bar-container">
+
+                        <input type="search" id="search-bar" placeholder="search products" />
+                        <label for="search-bar" id="search-btn"></label>
+
+                        <button type="submit" id="search-btn" value="Search">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <a href="Login.html"><img id="user-btn" src="..\Images\Icons\User.png " width="35" height="35" style="float: right" /></a>
+            <a href="Cart.html"><img id="cart-btn" src="..\Images\Icons\Cart.jpg" width="35" height="35" style="float: right" /></a>
+
+        </div>
+    </header>
+
+    <div class="menu-bar">
+        <ul>
+            <li>
+                <a href=" ">Category</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li class="hover-me">
+                            <a href="">Fashion & Clothing</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="wClothing.html">Women</a></li>
+                                    <li><a href="mClothing.html">Men</a></li>
+                                    <li><a href="kClothing.html">Kids</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me">
+                            <a href="">Accessories & Beauty Products</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="men.php">Women</a></li>
+                                    <li><a href="men.php">Men</a></li>
+                                    <li><a href="men.php">Kids</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Toys.html">Toys,Books & Stationaries</a></li>
+                        <li><a href="Sports.html">Sports Goods</a></li>
+                        <li><a href="lifeStyle.html">Home & LifeStyle</a></li>
+                        <li><a href="Electronics.html">Electronics</a></li>
+                        <li><a href="Pet.html">Pet Items</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="active"><a href="Home.html">Home</a></li>
+            <li><a href="Signup.html">Sign Up</a></li>
+            <li><a href="Account.html">My Account</a></li>
+            <li><a href="Wishlist.html">Wishlist</a></li>
+            <li><a href="Contact.html">Contact  Us</a></li>
+            <li><a href="Sell.html">Sell</a></li>
+            <li><a href="">Seller Center</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li style="margin:15px; text-align:center;"class="hover-me">
+                            
+                                <a href="SellerLogin.html">Seller Login</a>
+                                <a href="SellerDetails.html">Seller Details</a>
+                                <a href="SellerAccount.html">Seller Account</a>
+                                <a href="uploadProduct.html">Upload Products</a>
+                            
+                         
+                        </li>
+                    </ul>
+                </div>
+            
+            </li>
+
+        </ul>
+    </div>
+
+    <!--Page content-->
+    <div class="home">
+        <div class="row">
+            <div class="col-2">
+                <h1>Shopzilla</h1>
+                <p>
+                    All in one place
+
+                </p><br>
+            </div>
+            <div class="col-2">
+                <img src="..\Images\Home.png" />
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div id="slider">
+            <figure>
+                <img src="..\images\HomePage\Sliding\slide1.jpg" />
+                <img src="..\Images\HomePage\Sliding\slide2.jpg" />
+                <img src="..\Images\HomePage\Sliding\slide3.jpg" />
+                <img src="..\Images\HomePage\Sliding\slide4.jpg" />
+            </figure>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+
+    <div class="small-container">
+        <!--Top Categories-->
+        <h3>Top Categories</h3>
+        <div class="row">
+            <div class="col-5">
+                <a href="newProduct.php?item_id=26">
+                    <img src="..\Images\pet\Food\food1.jpg" />
+                </a>
+                    <h5>LifeStyle</h5>
+                    <div class="rating">
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                    </div>
+                    <p>$41.56 </p>
+            </div>
+            <div class="col-5">
+                <a href="newProduct.php?item_id=51">
+                    <img src="..\Images\sports\Shoes\Shoe3.jpg" />
+                    </a>
+                    <h5> Sports </h5>
+                    <div class="rating">
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                    </div>
+                    <p>$200.00 </p>
+            </div>
+            <div class="col-5">
+                <a href="newProduct.php?item_id=28">
+                    <img src="..\Images\pet\Food\food2.jpg" />
+                    </a>
+                    <h5>Pet Food</h5>
+                    <div class="rating">
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star1.png" />
+                    </div>
+                    <p>$30.99 </p>
+            </div>
+            <div class="col-5">
+                <a href="newProduct.php?item_id=52">
+                    <img src="..\Images\kclothing\Boys\Shirts\Shirt1.jpg" />
+                </a>
+                    <h5>New model Shirts</h5>
+                    <div class="rating">
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                    </div>
+                    <p>$300.00 </p>
+            </div>
+            <div class="col-5">
+                <a href="newProduct.php?item_id=30">
+                    <img src="..\Images\pet\Food\food5.jpg" />
+                </a>
+                    <h5> Pet</h5>
+                    <div class="rating">
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star.png" />
+                        <img src="..\Images\icons\Star1.png" />
+                    </div>
+                    <p>$37.97</p>
+            </div>
+        </div>
+
+        <!--Beds & Mats-->
+        <h3>Today's Popular Picks</h3>
+        <div class="row">
+            <div class="col-5">
+                <img src="..\Images\kclothing\Girls\Dresses\Dress4.jpg" />
+                <h5>New model frock </h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                </div>
+                <p>$450.00 </p>
+            </div>
+            <div class="col-5">
+                <img src="..\Images\pet\Beds\bed5.jpg" />
+                <h5>Luxury Cosy Cat Bed</h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star1.png" />
+                </div>
+                <p>$155.00 </p>
+            </div>
+            <div class="col-5">
+                <img src="..\Images\sports\Items\item7.jpg" />
+                <h5>Best quality Basketball</h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star1.png" />
+                </div>
+                <p>$65.00 </p>
+            </div>
+            <div class="col-5">
+                <img src="..\Images\lifeStyle\Kitchen\Kitchen1.jpg" />
+                <h5>Hand Mixer with Whisks</h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                </div>
+                <p>$220.32</p>
+            </div>
+            <div class="col-5">
+                <img src="..\Images\pet\Beds\mat2.jpg" />
+                <h5>Fluffy Plush Dog Mat</h5>
+                <div class="rating">
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star.png" />
+                    <img src="..\Images\icons\Star1.png" />
+                </div>
+                <p>$110.69 </p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="slide">
+        <div id="slider">
+            <figure>
+                <img src="..\Images\electronics\Phones\Iphone4.jpg" />
+                <img src="..\Images\sports\Sliding\Sport1.jpg" />
+                <img src="..\Images\lifeStyle\Furniture\Furniture.jpg" />
+                <img src="..\Images\pet\Beds\bed2.jpg" />
+            </figure>
+
+        </div>
+    </div>
+
+    <div class="review">
+        <div class="row">
+            <div class="col-3">
+                <img src="..\Images\HomePage\Review\R1.png" />
+            </div>
+            <div class="col-3">
+                <img src="..\Images\HomePage\Review\R2.png" />
+            </div>
+            <div class="col-3">
+                <img src="..\Images\HomePage\Review\R3.png" />
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer Section-->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <img src="..\Images\icons\Googleplay1.png" />
+                    <img src="..\Images\icons\Windows.png" />
+                    <br />
+                    <img src="..\Images\icons\Applestore1.jpg" />
+                </div>
+                <div class="footer-col-2">
+                    <h3>Payment Methods</h3>
+                    <img src="..\Images\icons\Master1.png" />
+                    <img src="..\Images\icons\Visa1.png" />
+                    <img src="..\Images\icons\Discover.png" />
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us on</h3>
+                    <img src="..\Images\icons\Facebook1.png" />
+                    <img src="..\Images\icons\Instagram1.png" />
+                    <img src="..\Images\icons\Twitter1.png" />
+                </div>
+                <div class="footer-col-4">
+                    <p><a href="About.html">About Us</a></p><br />
+                    <p><a href="Blog.html">Blog</a></p><br />
+                    <p><a href="Policy.html">Privacy Policy</a></p><br />
+                    <p><a href="Terms.html">Terms and Conditions</a></p>
+                </div>
+                <div class="footer-col-5">
+                    <h3>Business Details</h3>
+                    <p><img src="..\Images\icons\location.png" />Shopzilla, Colombo, Sri Lanka.</p>
+                    <p><img src="..\Images\icons\email.png" />Shopzilla2022@gmail.com</p>
+                    <p><img src="..\Images\icons\phone.png" />+94573409210</p>
+                </div>
+            </div>
+            <br /><br />
+            <hr />
+            <p class="copyright"> Copyright 2022 Shopzilla <br /> All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>

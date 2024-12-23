@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="JS/Contact.js"></script>
+    <titile>Contact Page</titile>
+
+    <!-- Contact css file link  -->
+    <link rel="stylesheet" href="../CSS/contact.css">
+
+</head>
+<body>
+
+<!--Header Section-->
+
+<header class="header">
+    <a href="Home.html">
+        <img src="..\Images\logo4.png" width="150">
+    </a>
+
+    <div class="icons">
+        <ul>
+
+            <li>
+                <form action="" class="search-bar-container">
+
+                    <input type="search" id="search-bar" placeholder="search products" />
+                    <label for="search-bar" id="search-btn"></label>
+
+                    <button type="submit" id="search-btn" value="Search">Search</button>
+                </form>
+            </li>
+        </ul>
+        <a href="Login.html"><img id="user-btn" src="..\Images\Icons\User.png " width="35" height="35" style="float: right" /></a>
+        <a href="Cart.html"><img id="cart-btn" src="..\Images\Icons\Cart.jpg" width="35" height="35" style="float: right" /></a>
+
+    </div>
+</header>
+
+
+<div class="menu-bar">
+    <ul>
+        <li>
+            <a class="" href=" ">Category</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me">
+                        <a href="">Fashion & Clothing</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="wClothing.html">Women</a></li>
+                                <li><a href="mClothing.html">Men</a></li>
+                                <li><a href="kClothing.html">Kids</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hover-me">
+                        <a href="">Accessories & Beauty Products</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="men.php">Women</a></li>
+                                <li><a href="men.php">Men</a></li>
+                                <li><a href="men.php">Kids</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="Toys.html">Toys,Books & Stationaries</a></li>
+                    <li><a href="Sports.html">Sports Goods</a></li>
+                    <li><a href="lifeStyle.html">Home & LifeStyle</a></li>
+                    <li><a href="Electronics.html">Electronics</a></li>
+                    <li class="active"><a href="Pet.html">Pet Items</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Signup.html">Sign Up</a></li>
+        <li><a href="Account.html">My Account</a></li>
+        <li><a href="Wishlist.html">Wishlist</a></li>
+        <li class="active"><a href="Contact.html">Contact  Us</a></li>
+        <li><a href="Sell.html">Sell</a></li>
+        <li><a href="SellerAccount.html">Seller Center</a></li>
+
+    </ul>
+</div>
+
+    <div class="container">
+
+    
+
+            <div class="row">
+
+                <div class="col1">
+
+                    <div class="addform"><h1>----CONTACT US----</h1></div><br><br>
+                    <div class="add">
+                        <form action="fConnection.php" method="POST">
+
+                            <label for="firstname" id="addformalign">First Name:</label>
+                            <input type="text" style="width:250px" placeholder="First Name" name="firstName" required /><br><br>
+
+                            <label for="lastname" id="addformalign">Last Name:</label>
+                            <input type="text" style="width:250px" placeholder="Last Name" name="lastName" required /><br><br>
+
+                            <label for="email" id="addformalign">Email Address:</label><br>
+                            <input type="email" style="width:500px" pattern="[a-zA-Z0-9._%+-]+@[a-z]+.[a-z]{2,4}" placeholder="E mail" name="email" required />
+                            <br><br>
+
+                            <label for="phone" id="addformalign">Mobile number:</label><br>
+                            <input type="tel" pattern="[0-9]{10}" style="width:500px" placeholder="Phone number" name="phoneNumber" required />
+
+                            <br><br>
+
+                            <label class="msg" id="addformalign">Message:</label><br>
+                            <textarea rows="10" placeholder="Your Message" style="width:500px; font-size:15px" name="message" required></textarea>
+                            <br><br>
+                            <input style="background-color: #7B68EE; border: none; border-radius: 10px; color: White; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; cursor: pointer; box-shadow: 0 2px #999" type="submit" value="Submit">
+                        </form>
+                    </div>
+
+       
+             </div>
+        </div>
+    </div>
+    <br>
+  
+
+    <div class="col2">
+        <label class="msg" id="addformalign"><h2>If you have questions or inquiries,you're welcome to contact us</h2></label><br>
+        <br><textarea rows="10" placeholder=" Business Details:
+
+				Shopzilla, Colombo, Sri Lanka.
+
+				Shopzilla2022@Gmail.Com
+
+				+94573409210" style="width:500px; background-color: #E6E6FA; font-size:15px"></textarea><br><br>
+
+        <input style="background-color: #7B68EE; border: none; border-radius: 10px; color: White; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; cursor: pointer; box-shadow: 0 2px #999" type="submit" value="Subscribe to Email"><br><br>
+
+
+    </div>
+        <!--Footer Section-->
+
+        <div class="footer">
+            <div class="container-q">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <img src="..\Images\icons\Googleplay1.png" />
+                        <img src="..\Images\icons\Windows.png" />
+                        <br />
+                        <img src="..\Images\icons\Applestore1.jpg" />
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Payment Methods</h3>
+                        <img src="..\Images\icons\Master1.png" />
+                        <img src="..\Images\icons\Visa1.png" />
+                        <img src="..\Images\icons\Discover.png" />
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us on</h3>
+                        <img src="..\Images\icons\Facebook1.png" />
+                        <img src="..\Images\icons\Instagram1.png" />
+                        <img src="..\Images\icons\Twitter1.png" />
+                    </div>
+                    <div class="footer-col-4">
+                        <p><a href="About.html">About Us</a></p><br />
+                        <p><a href="Bloh.html">Blog</a></p><br />
+                        <p><a href="Policy.html">Privacy Policy</a></p><br />
+                        <p><a href="Terms.html">Terms and Conditions</a></p>
+                    </div>
+                    <div class="footer-col-5">
+                        <h3>Business Details</h3>
+                        <p><img src="..\Images\icons\location.png" />Shopzilla, Colombo, Sri Lanka.</p>
+                        <p><img src="..\Images\icons\email.png" />Shopzilla2022@gmail.com</p>
+                        <p><img src="..\Images\icons\phone.png" />+94573409210</p>
+                    </div>
+                </div>
+                <br /><br />
+                <hr />
+                <p class="copyright"> Copyright 2022 Shopzilla <br /> All Rights Reserved</p>
+            </div>
+        </div>
+</body>
+</html>
